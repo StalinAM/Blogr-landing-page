@@ -1,0 +1,125 @@
+/* Menu Mobile */
+.menu-mobile-container {
+  right: 30px;
+  top: 124px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--White);
+  width: 320px;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0px 3px 103px -38px var(--Very-dark-grayish-blue);
+}
+.menu-mobile-container ul {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  list-style: none;
+  color: var(--Very-dark-blue);
+}
+.menu-mobile-container .company-submenu li,
+.menu-mobile-container .product-submenu li,
+.menu-mobile-container .connect-submenu li {
+  color: var(--Very-dark-desaturated-blue);
+  
+}
+.menu-mobile-container .company-submenu li:last-child,
+.menu-mobile-container .product-submenu li:last-child,
+.menu-mobile-container .connect-submenu li:last-child {
+  margin-bottom: 0;
+}
+.menu-mobile-container ul li {
+  margin-bottom: 28px;
+}
+.menu-mobile-container ul li img {
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+.menu-mobile-container ul li a {
+  color: var(--Very-dark-grayish-blue);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+#login {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  padding: 25px;
+}
+#sign-up {
+  border: none;
+  color: var(--White);
+  background: linear-gradient(
+    270deg,
+    var(--Light-red) 0%,
+    var(--Very-light-red) 100%
+  );
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  padding: 14px 40px;
+  border-radius: 29px;
+}
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  background-image: linear-gradient(
+    var(--Very-dark-gray-blue),
+    var(--Very-dark-desaturated-blue)
+  );
+  border-radius: 0 86px 0 0;
+  font-size: 1.2rem;
+}
+footer img {
+  margin: 78px 0;
+}
+.product-container ul,
+.company-container ul,
+.connect-container ul {
+  display: flex;
+  flex-direction: column;
+  color: var(--White);
+  font-weight: bold;
+  text-align: center;
+  list-style: none;
+}
+.product-container a,
+.company-container a,
+.connect-container a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  color: var(--Grayish-blue);
+  font-weight: normal;
+}
+.product-container li,
+.company-container li,
+.connect-container li {
+  margin: 3px 0;
+}
+.product-container li:nth-child(1),
+.company-container li:nth-child(1),
+.connect-container li:nth-child(1) {
+  margin-top: 34px;
+}
+.product-container li:last-child,
+.company-container li:last-child,
+.connect-container li:last-child {
+  margin-bottom: 58px;
+}
+.connect-container ul li:last-child {
+  margin-bottom: 87px;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
