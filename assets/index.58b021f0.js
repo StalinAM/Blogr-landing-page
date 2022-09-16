@@ -163,7 +163,7 @@ margin-bottom: 2em;
       text-decoration: none;
     }
   }
-`;function ci({text:e,ref:t,objItemSub:n}){const[r,o]=Q.exports.useState(!1);return fe(n0,{children:[I(o0,{click:r,onClick:()=>o(!r),href:t,children:e}),fe("picture",{children:[I("source",{media:"(min-width:1170px)",srcSet:"./src/assets/icon-arrow-light.svg"}),I(r0,{click:r,src:"./src/assets/icon-arrow-dark.svg"})]}),I(t0,{click:r,objItemSub:n})]})}const l0=B.ul`
+`;function ci({text:e,ref:t,objItemSub:n}){const[r,o]=Q.exports.useState(!1);return fe(n0,{children:[I(o0,{click:r,onClick:()=>o(!r),href:t,children:e}),fe("picture",{children:[I("source",{media:"(min-width:1170px)",srcSet:"./assets/icon-arrow-light.svg"}),I(r0,{click:r,src:"./assets/icon-arrow-dark.svg"})]}),I(t0,{click:r,objItemSub:n})]})}const l0=B.ul`
   margin-top: 12px;
   list-style: none;
   gap: 5em;
@@ -218,7 +218,7 @@ margin-bottom: 2em;
   border-radius: 0 0 0 86px;
   background-repeat: no-repeat;
   background-position: -336px -247px, center;
-  background-image: url(./src/assets/bg-pattern-intro-mobile.svg),
+  background-image: url(./assets/bg-pattern-intro-mobile.svg),
     linear-gradient(
       ${e=>e.theme.VeryLightRedG},
       ${e=>e.theme.LightRedG}
@@ -255,7 +255,7 @@ margin-bottom: 2em;
     object-position: ${e=>e.nameImage=="editor"?"5em":"-21em"};
     width: 100%;
   }
-`;function w0({nameImage:e}){return fe(v0,{children:[I("source",{media:"(min-width:1170px)",srcSet:`../src/assets/illustration-${e}-desktop.svg`}),I(y0,{nameImage:e,src:`../src/assets/illustration-${e}-mobile.svg`,alt:"phones with the Blogr logo"})]})}const S0=B.section`
+`;function w0({nameImage:e}){return fe(v0,{children:[I("source",{media:"(min-width:1170px)",srcSet:`./assets/illustration-${e}-desktop.svg`}),I(y0,{nameImage:e,src:`./assets/illustration-${e}-mobile.svg`,alt:"phones with the Blogr logo"})]})}const S0=B.section`
 
   display: flex;
   flex-direction: column;
@@ -305,7 +305,7 @@ margin-bottom: 2em;
   background-size: 605px, auto;
   background-position: -112px -258px, center;
   background-repeat: no-repeat;
-  background-image: url(./src/assets/bg-pattern-circles.svg),
+  background-image: url(./assets/bg-pattern-circles.svg),
     linear-gradient(
       ${e=>e.theme.VeryDarkGrayBlue},
       ${e=>e.theme.VeryDarkDesaturatedBlue}
