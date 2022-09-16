@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Submenus from "./Submenus";
+import arrowD from '../../../assets/icon-arrow-dark.svg'
+import arrowL from '../../../assets/icon-arrow-light.svg'
 const Item = styled.li`
 margin-bottom: 2em;
   @media (max-width: 970px) {
@@ -40,9 +42,9 @@ function ItemMenu({ text, ref, objItemSub }) {
       <picture>
         <source
           media="(min-width:1170px)"
-          srcSet="./assets/icon-arrow-light.svg"
+          srcSet={arrowL}
         />
-        <Arrow  click={click} src="./assets/icon-arrow-dark.svg" />
+        <Arrow  click={click} src={arrowD} />
       </picture>
       <Submenus click={click} objItemSub={objItemSub} />
     </Item>

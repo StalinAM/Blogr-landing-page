@@ -1,4 +1,5 @@
 import phones from "../../assets/illustration-phones.svg";
+import pattern from "../../assets/bg-pattern-circles.svg";
 import { useContext } from "react";
 import { DataContext } from "../../context/Data";
 import styled from "styled-components";
@@ -12,10 +13,10 @@ const SectionState = styled.section`
   margin-top: 232px;
   border-radius: 0 86px 0 86px;
   position: relative;
-  background-size: 605px, auto;
-  background-position: -112px -258px, center;
+  background-size: 995px, auto;
+  background-position: -158px -485px, center;
   background-repeat: no-repeat;
-  background-image: url(./assets/bg-pattern-circles.svg),
+  background-image: url(${pattern}),
     linear-gradient(
       ${(props) => props.theme.VeryDarkGrayBlue},
       ${(props) => props.theme.VeryDarkDesaturatedBlue}

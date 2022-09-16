@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import editorD from "../../assets/illustration-editor-desktop.svg";
+import editorM from "../../assets/illustration-editor-mobile.svg";
+import laptopD from "../../assets/illustration-laptop-desktop.svg";
+import laptopM from "../../assets/illustration-laptop-mobile.svg";
 
 const Container = styled.picture`
   @media (min-width: 1170px) {
@@ -24,11 +28,11 @@ function ImageSection({ nameImage }) {
     <Container>
       <source
         media="(min-width:1170px)"
-        srcSet={`./assets/illustration-${nameImage}-desktop.svg`}
+        srcSet={nameImage == "editor" ? editorM : laptopM}
       />
       <Image
         nameImage={nameImage}
-        src={`./assets/illustration-${nameImage}-mobile.svg`}
+        src={nameImage == "editor" ? editorM : laptopM}
         alt="phones with the Blogr logo"
       />
     </Container>

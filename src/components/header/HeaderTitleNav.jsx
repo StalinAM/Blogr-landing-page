@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Home from './Home'
 import styled from "styled-components";
+import pattern from '../../assets/bg-pattern-intro-mobile.svg'
 import NavBar from "./NavBar";
 const Header = styled.header`
   display: flex;
@@ -11,8 +12,8 @@ const Header = styled.header`
   text-align: center;
   border-radius: 0 0 0 86px;
   background-repeat: no-repeat;
-  background-position: -336px -247px, center;
-  background-image: url(./assets/bg-pattern-intro-mobile.svg),
+  background-position: center, center;
+  background-image: url(${pattern}),
     linear-gradient(
       ${(props) => props.theme.VeryLightRedG},
       ${(props) => props.theme.LightRedG}

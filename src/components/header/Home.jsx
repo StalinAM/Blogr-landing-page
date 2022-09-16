@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { DataContext } from "../../context/Data";
 import styled from "styled-components";
-import Button from "./Button";
 import BtnContainer from "./BtnContainer";
 const HomeSection = styled.section`
   margin: 66px 0;
