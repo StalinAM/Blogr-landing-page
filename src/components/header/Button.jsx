@@ -1,33 +1,57 @@
 import styled from "styled-components";
 const Btn = styled.button`
-  color: ${(props) =>
-    props.text == "Sign Up" || props.text == "Start for Free"
-      ? props.theme.LightRed
-      : props.theme.White};
+  color: ${(props) => {
+    if (props.text == "Login") {
+      return props.theme.VeryDarkBlue;
+    } else if (props.text == "Sign Up" || props.text == "Learn More") {
+      return props.theme.White;
+    } else {
+      return props.theme.LightRed;
+    }
+  }};
   border: ${(props) =>
     props.text !== "Login" ? `1px solid ${props.theme.White}` : "none"};
   border-radius: 24px;
   padding: 10px ${(props) => (props.text == "Sign Up" ? "32px" : "18px")};
   font-size: 1rem;
   font-weight: bold;
-  background: ${(props) =>
-    props.text == "Sign Up" || props.text == "Start for Free"
-      ? props.theme.White
-      : "none"};
+  background: ${(props) => {
+    if (props.text == "Sign Up") {
+      return `linear-gradient(90deg, ${props.theme.LightRed}, ${props.theme.VeryLightRed})`;
+    } else if (props.text == "Start for Free" || props.text == "Login") {
+      return props.theme.White;
+    } else {
+      return "none";
+    }
+  }};
   font-family: "Ubuntu", sans-serif;
-  @media (max-width: 970px) {
-    ${(props) => {
-      if (props.text == "Login") {
-        return `color: ${props.theme.VeryDarkBlue}`;
-      }
-      if (props.text == "Sign Up") {
-        return `color: ${props.theme.White}; background: linear-gradient(
-    270deg,
-    ${props.theme.LightRed} 0%,
-    ${props.theme.VeryLightRed} 100%
-  );`;
-      }
-    }};
+  cursor: pointer;
+
+  @media (min-width: 1170px) {
+    color: ${(props) =>
+      props.text == "Login" || props.text == "Learn More"
+        ? props.theme.White
+        : props.theme.LightRed};
+    border: ${(props) =>
+      props.text == "Learn More" ? `1px solid ${props.theme.White}` : "none"};
+    background: ${(props) =>
+      props.text == "Sign Up" || props.text == "Start for Free"
+        ? props.theme.White
+        : "none"};
+    &:hover {
+      background: ${(props) =>
+        props.text == "Start for Free" || props.text == "Sign Up"
+          ? props.theme.VeryLightRed
+          : props.theme.White};
+      color: ${(props) =>
+        props.text == "Start for Free" || props.text == "Sign Up"
+          ? props.theme.White
+          : props.theme.VeryLightRed};
+      border: ${(props) =>
+        props.text == "Start for Free" || props.text == "Sign Up"
+          ? props.theme.White
+          : props.theme.LightRed};
+    }
   }
 `;
 function Button({ text }) {

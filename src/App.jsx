@@ -1,14 +1,10 @@
-// import logo from "./assets/logo.svg";
 import HeaderTitleNav from "./components/header/HeaderTitleNav";
 import Section1 from "./components/main/Section1";
 import Section2 from "./components/main/Section2";
-// import Section3 from "./components/Section3";
-//import SectionFooter1 from "./components/SectionFooter1";
-//import SectionFooter2 from "./components/SectionFooter2";
-// import SectionFooter3 from "./components/SectionFooter3";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
 import { colors } from "./styles/Theme";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -21,6 +17,7 @@ function App() {
           <Section2 indexSP={2} />
           <Section1 indexSP={3} nameImage={"laptop"} />
         </main>
+        <Footer />
       </ThemeProvider>
     </>
   );

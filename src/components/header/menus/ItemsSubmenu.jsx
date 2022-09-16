@@ -10,7 +10,7 @@ const Item = styled.a`
   font-weight: 300;
   font-family: "Ubuntu", sans-serif;
   cursor: pointer;
-  @media (min-width: 970px) {
+  @media (min-width: 1170px) {
     &:hover{
       font-weight: bold;
     }

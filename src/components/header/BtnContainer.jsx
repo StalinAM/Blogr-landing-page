@@ -7,7 +7,7 @@ const ContainerBtn = styled.div`
   gap: 18px;
   margin-top: ${(props) => (props.text1 !== "Login" ? "43px" : "0px")};
   margin-bottom: ${(props) => (props.text1 !== "Login" ? "72px" : "0px")};
-  @media (max-width: 970px) {
+  @media (max-width: 1170px) {
     ${(props) =>
       props.text1 == "Login" && "displey: flex; justify-content: center; flex-direction: column; gap: 0; margin: 20px 0px"};
   }

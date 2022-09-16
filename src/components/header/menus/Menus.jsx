@@ -6,16 +6,16 @@ const Menu = styled.ul`
   margin-top: 12px;
   list-style: none;
   gap: 5em;
-  @media (min-width: 970px) {
+  @media (min-width: 1170px) {
     display: flex;
     flex-direction: row;
   }
 `;
 
-function Menus() {
+function Menus( ) {
   const data = useContext(DataContext);
   return (
-    <Menu>
+    <Menu >
       <ItemMenu  text={"Product"} objItemSub={data.productSubmenu} />
       <ItemMenu text={"Company"} objItemSub={data.companySubmenu} />
       <ItemMenu text={"Connect"} objItemSub={data.connectSubmenu} />

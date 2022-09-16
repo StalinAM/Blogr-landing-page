@@ -17,7 +17,6 @@ const Header = styled.header`
       ${(props) => props.theme.VeryLightRedG},
       ${(props) => props.theme.LightRedG}
     );
-  margin-bottom: 104px;
   font-family: "Overpass", sans-serif;
   padding: 25px 30px;
 `;

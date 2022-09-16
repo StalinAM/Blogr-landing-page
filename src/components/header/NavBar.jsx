@@ -14,7 +14,7 @@ const ImageLogo = styled.img`
   min-width: 4.5em;
 `;
 const ImageBurguer = styled.img`
-  @media (min-width: 970px) {
+  @media (min-width: 1170px) {
     display: none;
   }
 `;
@@ -23,7 +23,7 @@ const MenuContainer = styled.div`
   width: 85%;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 970px) {
+  @media (max-width: 1170px) {
     right: 30px;
     top: 124px;
     position: absolute;
@@ -43,7 +43,7 @@ const Separator = styled.hr`
   width: 95%;
   margin-top: 30px;
   border: 1px solid ${(props) => props.theme.GrayishBlue};
-  @media (min-width: 970px) {
+  @media (min-width: 1170px) {
     display: none;
   }
 `;
@@ -52,7 +52,7 @@ function NavBar() {
   return (
     <Nav>
       <ImageLogo src={logo} alt="" />
-      <MenuContainer click={click}>
+      <MenuContainer click={click} >
         <Menus />
         <Separator />
         <BtnContainer text1="Login" text2="Sign Up" />

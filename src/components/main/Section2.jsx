@@ -20,17 +20,29 @@ const SectionState = styled.section`
       ${(props) => props.theme.VeryDarkGrayBlue},
       ${(props) => props.theme.VeryDarkDesaturatedBlue}
     );
+  @media (min-width: 1170px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 const SubTitle = styled.h2`
   font-family: "Overpass", sans-serif;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   letter-spacing: -0.4px;
-  margin-top: 230px;
-  font-weight: 300;
+
+  font-weight: bold;
   color: ${(props) => props.theme.White};
 `;
-
+const Container = styled.article`
+  margin-top: 230px;
+  @media (min-width: 1170px) {
+    margin: 118px 0;
+    padding-right: 142px;
+    grid-column: 2/3;
+    text-align: start;
+  }
+`;
 const Paragraph = styled.p`
   font-family: "Overpass", sans-serif;
   font-size: 1.17rem;
@@ -39,11 +51,20 @@ const Paragraph = styled.p`
   margin-top: 18px;
   margin-bottom: 114px;
   color: ${(props) => props.theme.GrayishBlue};
+  @media (min-width: 1170px) {
+    margin: 20px 0 0 0;
+  }
 `;
 const Image = styled.img`
   width: 375px;
   position: absolute;
   top: -183px;
+  @media (min-width: 1170px) {
+    margin: 0;
+    left: 5%;
+    top: -4.5em;
+    width: 35em;
+  }
 `;
 
 function Section2({ indexSP }) {
@@ -51,8 +72,10 @@ function Section2({ indexSP }) {
   return (
     <SectionState>
       <Image src={phones} alt="phones with the Blogr logo" />
-      <SubTitle>{data.subTitle[indexSP]}</SubTitle>
-      <Paragraph>{data.paragraph[indexSP]}</Paragraph>
+      <Container>
+        <SubTitle>{data.subTitle[indexSP]}</SubTitle>
+        <Paragraph>{data.paragraph[indexSP]}</Paragraph>
+      </Container>
     </SectionState>
   );
 }

@@ -9,7 +9,7 @@ const SubMenu = styled.ul`
   border-radius: 6px;
   padding: 12px 0;
   display: ${(props) => (props.click ? "display" : "none")};
-  @media (min-width: 970px) {
+  @media (min-width: 1170px) {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -25,7 +25,7 @@ const SubMenu = styled.ul`
 
 function Submenus({ objItemSub, click }) {
   return (
-    <SubMenu click={click}>
+    <SubMenu click={click}   >
       {objItemSub.map((item, index) => (
         <ItemsSubmenu key={index} text={item} />
       ))}

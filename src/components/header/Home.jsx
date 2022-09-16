@@ -10,11 +10,18 @@ const Title = styled.h1`
   margin-top: 48px;
   font-size: 2.1rem;
   color: ${(props) => props.theme.White};
+  @media (min-width: 830px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 1170px) {
+    font-size: 3.5rem;
+  }
 `;
 const Paragraph = styled.p`
   color: ${(props) => props.theme.GrayishBlue};
   font-size: 1.2rem;
   margin-top: 14px;
+
 `;
 
 function Home() {
