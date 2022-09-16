@@ -24,11 +24,11 @@ function ImageSection({ nameImage }) {
     <Container>
       <source
         media="(min-width:1170px)"
-        srcSet={`../src/assets/illustration-${nameImage}-desktop.svg`}
+        srcSet={`./assets/illustration-${nameImage}-desktop.svg`}
       />
       <Image
         nameImage={nameImage}
-        src={`../src/assets/illustration-${nameImage}-mobile.svg`}
+        src={`./assets/illustration-${nameImage}-mobile.svg`}
         alt="phones with the Blogr logo"
       />
     </Container>

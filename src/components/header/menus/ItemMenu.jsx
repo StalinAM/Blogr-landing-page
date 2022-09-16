@@ -40,9 +40,9 @@ function ItemMenu({ text, ref, objItemSub }) {
       <picture>
         <source
           media="(min-width:1170px)"
-          srcSet="./src/assets/icon-arrow-light.svg"
+          srcSet="./assets/icon-arrow-light.svg"
         />
-        <Arrow  click={click} src="./src/assets/icon-arrow-dark.svg" />
+        <Arrow  click={click} src="./assets/icon-arrow-dark.svg" />
       </picture>
       <Submenus click={click} objItemSub={objItemSub} />
     </Item>

@@ -12,7 +12,7 @@ const Header = styled.header`
   border-radius: 0 0 0 86px;
   background-repeat: no-repeat;
   background-position: -336px -247px, center;
-  background-image: url(./src/assets/bg-pattern-intro-mobile.svg),
+  background-image: url(./assets/bg-pattern-intro-mobile.svg),
     linear-gradient(
       ${(props) => props.theme.VeryLightRedG},
       ${(props) => props.theme.LightRedG}

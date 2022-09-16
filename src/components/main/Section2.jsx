@@ -15,7 +15,7 @@ const SectionState = styled.section`
   background-size: 605px, auto;
   background-position: -112px -258px, center;
   background-repeat: no-repeat;
-  background-image: url(./src/assets/bg-pattern-circles.svg),
+  background-image: url(./assets/bg-pattern-circles.svg),
     linear-gradient(
       ${(props) => props.theme.VeryDarkGrayBlue},
       ${(props) => props.theme.VeryDarkDesaturatedBlue}
